@@ -1,370 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AYKA PROMO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AYKA PROMO</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #071427;
-      color: white;
-    }
-
-    .navbar 
-      height: 95px;
-      background: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 70px;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.12);
-    }
-
-    .navbar img {
-      width: 82px;
-      height: 82px;
-      object-fit: contain;
-      border-radius: 50%;
-    }
-
-    .menu a {
-      color: #071427;
-      text-decoration: none;
-      margin-left: 35px;
-      font-size: 17px;
-      font-weight: 600;
-      letter-spacing: 1px;
-    }
-
-    .menu a:hover {
-      color: #9c9c9c;
-    }
-
-    .hero {
-      position: relative;
-      height: 560px;
-      overflow: hidden;
-      background: linear-gradient(120deg, rgba(7,20,39,0.92), rgba(18,52,92,0.78)),
-        url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      padding-left: 90px;
-    }
-
-    .hero-content {
-      max-width: 760px;
-    }
-
-    .hero-content h1 {
-      font-size: 56px;
-      margin: 0 0 20px;
-      letter-spacing: 2px;
-    }
-
-    .hero-content p {
-      font-size: 23px;
-      line-height: 1.6;
-      color: #e8e8e8;
-    }
-
-    .hero-buttons {
-      margin-top: 35px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 28px;
-      margin-right: 15px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    .btn-main {
-      background: #c0c0c0;
-      color: #071427;
-    }
-
-    .btn-dark {
-      border: 1px solid #c0c0c0;
-      color: white;
-    }
-
-    .slider-dots {
-      position: absolute;
-      bottom: 28px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .slider-dots span {
-      display: inline-block;
-      width: 11px;
-      height: 11px;
-      background: white;
-      opacity: 0.5;
-      border-radius: 50%;
-      margin: 0 6px;
-    }
-
-    .slider-dots span:first-child {
-      opacity: 1;
-      background: #c0c0c0;
-    }
-
-    .intro {
-      background: white;
-      color: #071427;
-      padding: 60px 90px;
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .intro h5 {
-      color: #8b0000;
-      letter-spacing: 8px;
-      margin: 0 0 15px;
-      font-size: 15px;
-    }
-
-    .intro h2 {
-      font-size: 42px;
-      margin: 0 0 20px;
-    }
-
-    .intro p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: #333;
-      max-width: 850px;
-    }
-
-    .consult-btn {
-      background: #8b0000;
-      color: white;
-      padding: 20px 32px;
-      text-decoration: none;
-      font-weight: bold;
-      white-space: nowrap;
-    }
-
-    .floating-contact {
-      position: fixed;
-      right: 22px;
-      top: 42%;
-      background: rgba(7,20,39,0.85);
-      border: 1px solid #c0c0c0;
-      border-radius: 25px;
-      overflow: hidden;
-      z-index: 999;
-    }
-
-    .floating-contact a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 16px;
-      font-size: 22px;
-      text-align: center;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-    }
-
-    .floating-contact a:last-child {
-      border-bottom: none;
-    }
-
-    @media (max-width: 800px) {
-      .navbar {
-        padding: 0 20px;
-      }
-
-      .menu a {
-        margin-left: 12px;
-        font-size: 13px;
-      }
-
-      .hero {
-        padding: 40px 25px;
-        height: 520px;
-      }
-
-      .hero-content h1 {
-        font-size: 36px;
-      }
-
-      .intro {
-        flex-direction: column;
-        padding: 40px 25px;
-      }
-    }
-  </style>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#071427;color:white}
+.navbar{height:95px;background:white;display:flex;align-items:center;justify-content:space-between;padding:0 80px}
+.logoBox{display:flex;flex-direction:column;align-items:center}
+.logoBox img{width:82px;border-radius:50%}
+.logoBox span{font-size:10px;color:#071427;letter-spacing:1.5px;margin-top:3px}
+.menu a{color:#071427;text-decoration:none;margin-left:35px;font-size:17px;font-weight:700}
+.hero{height:520px;background:linear-gradient(120deg,rgba(7,20,39,.88),rgba(18,52,92,.75)),url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80");background-size:cover;background-position:center;display:flex;align-items:center;padding-left:90px}
+.hero h1{font-size:54px;max-width:850px;margin:0 0 25px;letter-spacing:2px}
+.hero p{font-size:22px;max-width:850px;line-height:1.6}
+.btn{display:inline-block;margin-top:25px;margin-right:15px;padding:15px 28px;text-decoration:none;font-weight:bold;border-radius:5px}
+.btn1{background:#c0c0c0;color:#071427}
+.btn2{border:1px solid #c0c0c0;color:white}
+.searchWrap{display:flex;justify-content:center;margin-top:-38px;position:relative;z-index:5}
+.searchBox{width:58%;background:white;border:2px solid #c0c0c0;border-radius:12px;display:flex;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.25)}
+.searchBox input{flex:1;border:none;padding:20px;font-size:17px;outline:none}
+.searchBox button{background:#071427;color:white;border:none;padding:0 28px;font-size:22px}
+.categories{background:white;color:#071427;padding:70px 40px;text-align:center}
+.catRow{display:flex;justify-content:center;gap:35px;flex-wrap:wrap}
+.cat img{width:115px;height:115px;border-radius:50%;object-fit:cover;border:2px solid #ddd}
+.cat p{font-size:17px;font-weight:bold}
+.intro{background:#f7f7f7;color:#071427;padding:55px 90px}
+.intro h5{color:#8b0000;letter-spacing:8px;font-size:15px}
+.intro h2{font-size:40px;margin:10px 0}
+.intro p{font-size:18px;line-height:1.7;max-width:900px}
+.float{position:fixed;right:22px;top:42%;background:#071427;border:1px solid #c0c0c0;border-radius:28px;overflow:hidden;z-index:99}
+.float a{display:block;color:white;text-decoration:none;padding:17px;font-size:22px;border-bottom:1px solid rgba(255,255,255,.2)}
+@media(max-width:800px){.navbar{padding:0 20px}.menu a{margin-left:12px;font-size:13px}.hero{padding:30px;height:480px}.hero h1{font-size:34px}.searchBox{width:85%}}
+</style>
 </head>
 
 <body>
 
-  <div class="navbar">  <div style="display:flex; flex-direction:column; align-items:flex-start;">    <img src="ChatGPT%20Image%2026%20Nis%202026%2019_28_15.png" style="width:90px;">    <span style="      font-size:12px;      color:#c0c0c0;      letter-spacing:2px;      margin-top:3px;    ">      MARKANIZI TAŞIYAN HEDİYELER    </span>  </div>
-
-🎯 2. HERO ALTINA ARAMA BAR EKLE
-</section> (hero kapanışı) hemen ALTINA şunu ekle:
-<div style="  display:flex;  justify-content:center;  margin-top:-40px;  margin-bottom:40px;">  <div style="    width:60%;    background:white;    border-radius:12px;    display:flex;    overflow:hidden;    box-shadow:0 10px 30px rgba(0,0,0,0.2);  ">    <input type="text" placeholder="Ürün, kategori veya marka yazınız..."      style="        flex:1;        border:none;        padding:18px;        font-size:16px;        outline:none;      ">    <button style="      background:#0b1d36;      color:white;      padding:0 25px;      border:none;      cursor:pointer;      font-size:18px;    ">      🔍    </button>  </div></div>
-
-🎯 3. KATEGORİ DAİRELERİ (GİMEL TARZI)
-Bunu da arama barının altına ekle:
-<section style="padding:50px; background:white; color:#071427; text-align:center;">  <h2 style="margin-bottom:40px;">Kategoriler</h2>  <div style="display:flex; gap:25px; justify-content:center; flex-wrap:wrap;">    <div>      <img src="https://via.placeholder.com/100" style="border-radius:50%;">      <p>Termos</p>    </div>    <div>      <img src="https://via.placeholder.com/100" style="border-radius:50%;">      <p>Defter</p>    </div>    <div>      <img src="https://via.placeholder.com/100" style="border-radius:50%;">      <p>Kutu Set</p>    </div>    <div>      <img src="https://via.placeholder.com/100" style="border-radius:50%;">      <p>Kalem</p>    </div>  </div></section>
-
-🔥 SONUÇ
-Site artık:
-
-
-Premium görünüm ✔️
-
-
-Logo + slogan ✔️
-
-
-Slider ✔️
-
-
-Arama barı ✔️
-
-
-Kategori sistemi ✔️
-
-
-
-🚀 SONRAKİ ADIM
-Bir sonraki seviyede sana şunu kurarım:
-👉 Gerçek ürün katalog sistemi
-👉 Her kategoriye tıklayınca sayfa açılması
-👉 WhatsApp teklif sistemi (ürüne özel mesaj)
-👉 Instagram’dan müşteri çekme sistemi
-
-Şimdi bunu uygula → ekran görüntüsü at
-Sonra siteyi birebir satış yapan sisteme çeviriyoruz 💰
-
-    <div class="menu">
-      <a href="#">Ev</a>
-      <a href="#">Ürünler</a>
-      <a href="#">Hakkımızda</a>
-      <a href="#">Hizmet</a>
-      <a href="#">İletişim</a>
-    </div>
+<div class="navbar">
+  <div class="logoBox">
+    <img src="ChatGPT%20Image%2026%20Nis%202026%2019_28_15.png" alt="AYKA PROMO">
+    <span>SUPPLY SOLUTION PARTNER</span>
   </div>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Kurumsal Promosyon ve Özel Baskı Çözümleri</h1>
-      <p>
-        Markanızı taşıyan kaliteli hediyeler, özel kutular, promosyon ürünleri
-        ve kurumsal setlerle firmanızı daha güçlü gösterin.
-      </p>
-
-      <div class="hero-buttons">
-        <a class="btn btn-main" href="#">Ürünleri İncele</a>
-        <a class="btn btn-dark" href="#">Teklif Al</a>
-      </div>
-    </div>
-
-    <div class="slider-dots">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </section>
-
-  <section class="intro">
-    <div>
-      <h5>AYKA PROMO</h5>
-      <h2>Markanızı Taşıyan Hediyeler</h2>
-      <p>
-        AYKA PROMO; kurumsal firmalara, ajanslara ve markalara özel promosyon,
-        baskılı ürün, kutu, hediye seti ve tedarik çözümleri sunar.
-        Premium görünüm, hızlı teklif ve doğru ürün seçimiyle markanızı öne çıkarır.
-      </p>
-    </div>
-
-    <a class="consult-btn" href="#">Ücretsiz Danışmanlık Alın</a>
-  <div style="
-  display:flex;
-  justify-content:center;
-  margin-top:-40px;
-  margin-bottom:40px;
-"><section style="padding:50px; background:white; color:#071427; text-align:center;">
-
-  <h2 style="margin-bottom:40px;">Kategoriler</h2>
-
-  <div style="display:flex; gap:25px; justify-content:center; flex-wrap:wrap;">
-
-    <div>
-      <img src="https://via.placeholder.com/100" style="border-radius:50%;">
-      <p>Termos</p>
-    </div>
-
-    <div>
-      <img src="https://via.placeholder.com/100" style="border-radius:50%;">
-      <p>Defter</p>
-    </div>
-
-    <div>
-      <img src="https://via.placeholder.com/100" style="border-radius:50%;">
-      <p>Kutu Set</p>
-    </div>
-
-    <div>
-      <img src="https://via.placeholder.com/100" style="border-radius:50%;">
-      <p>Kalem</p>
-    </div>
-
+  <div class="menu">
+    <a href="#">Ev</a>
+    <a href="#">Ürünler</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">Hizmet</a>
+    <a href="#">İletişim</a>
   </div>
-
-</section>
-
-  <div style="
-    width:60%;
-    background:white;
-    border-radius:12px;
-    display:flex;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-  ">
-
-    <input type="text" placeholder="Ürün, kategori veya marka yazınız..."
-      style="
-        flex:1;
-        border:none;
-        padding:18px;
-        font-size:16px;
-        outline:none;
-      ">
-
-    <button style="
-      background:#0b1d36;
-      color:white;
-      padding:0 25px;
-      border:none;
-      cursor:pointer;
-      font-size:18px;
-    ">
-      🔍
-    </button>
-
-  </div>
-
 </div>
 
-  <div class="floating-contact">
-    <a href="#">✉</a>
-    <a href="#">☎</a>
-    <a href="#">☏</a>
+<section class="hero">
+  <div>
+    <h1>Kurumsal Promosyon ve Özel Baskı Çözümleri</h1>
+    <p>Markanızı taşıyan kaliteli hediyeler, özel kutular, promosyon ürünleri ve kurumsal setlerle firmanızı daha güçlü gösterin.</p>
+    <a class="btn btn1" href="#">Ürünleri İncele</a>
+    <a class="btn btn2" href="#">Teklif Al</a>
   </div>
+</section>
+
+<div class="searchWrap">
+  <div class="searchBox">
+    <input type="text" placeholder="Ürün, kategori veya marka yazınız...">
+    <button>🔍</button>
+  </div>
+</div>
+
+<section class="categories">
+  <h2>Kategoriler</h2>
+  <div class="catRow">
+    <div class="cat"><img src="https://via.placeholder.com/120?text=Termos"><p>Termos</p></div>
+    <div class="cat"><img src="https://via.placeholder.com/120?text=Defter"><p>Defter</p></div>
+    <div class="cat"><img src="https://via.placeholder.com/120?text=Kutu"><p>Kutu Set</p></div>
+    <div class="cat"><img src="https://via.placeholder.com/120?text=Kalem"><p>Kalem</p></div>
+    <div class="cat"><img src="https://via.placeholder.com/120?text=Tekstil"><p>Tekstil</p></div>
+  </div>
+</section>
+
+<section class="intro">
+  <h5>AYKA PROMO</h5>
+  <h2>Markanızı Taşıyan Hediyeler</h2>
+  <p>AYKA PROMO; kurumsal firmalara, ajanslara ve markalara özel promosyon, baskılı ürün, kutu, hediye seti ve tedarik çözümleri sunar.</p>
+</section>
+
+<div class="float">
+  <a href="#">✉</a>
+  <a href="#">☎</a>
+  <a href="#">☏</a>
+</div>
 
 </body>
 </html>

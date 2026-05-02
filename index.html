@@ -1,90 +1,90 @@
-
-<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AYKA PROMO</title>
-
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#071427;color:white}
-.navbar{height:95px;background:white;display:flex;align-items:center;justify-content:space-between;padding:0 80px}
-.logoBox{display:flex;flex-direction:column;align-items:center}
-.logoBox img{width:82px;border-radius:50%}
-.logoBox span{font-size:10px;color:#071427;letter-spacing:1.5px;margin-top:3px}
-.menu a{color:#071427;text-decoration:none;margin-left:35px;font-size:17px;font-weight:700}
-.hero{height:520px;background:linear-gradient(120deg,rgba(7,20,39,.88),rgba(18,52,92,.75)),url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80");background-size:cover;background-position:center;display:flex;align-items:center;padding-left:90px}
-.hero h1{font-size:54px;max-width:850px;margin:0 0 25px;letter-spacing:2px}
-.hero p{font-size:22px;max-width:850px;line-height:1.6}
-.btn{display:inline-block;margin-top:25px;margin-right:15px;padding:15px 28px;text-decoration:none;font-weight:bold;border-radius:5px}
-.btn1{background:#c0c0c0;color:#071427}
-.btn2{border:1px solid #c0c0c0;color:white}
+body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#071427}
+.top{height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 110px;border-bottom:1px solid #eee;background:white}
+.logo img{width:92px;border-radius:50%;display:block}
+.logo span{font-size:10px;color:#b08d2f;letter-spacing:1.2px;font-weight:bold}
+.icons{display:flex;align-items:center;gap:22px;font-size:23px}
+.offer{background:#071427;color:white;padding:15px 26px;border-radius:10px;font-size:16px;font-weight:bold}
+.menu{height:55px;display:flex;align-items:center;justify-content:center;gap:32px;border-bottom:1px solid #eee;background:white;font-weight:bold}
+.menu a{text-decoration:none;color:#071427;font-size:16px}
+.hero{height:420px;background:linear-gradient(90deg,rgba(7,20,39,.15),rgba(7,20,39,.05)),url("https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=1600&q=80");background-size:cover;background-position:center;position:relative}
+.heroText{position:absolute;left:120px;top:90px;max-width:600px}
+.heroText h1{font-size:48px;margin:0 0 15px;color:#071427}
+.heroText p{font-size:22px;line-height:1.5;color:#333}
+.sliderDots{position:absolute;bottom:52px;left:50%;transform:translateX(-50%)}
+.sliderDots span{display:inline-block;width:10px;height:10px;background:#ddd;border-radius:50%;margin:0 5px}
+.sliderDots span:nth-child(2){background:#071427}
 .searchWrap{display:flex;justify-content:center;margin-top:-38px;position:relative;z-index:5}
-.searchBox{width:58%;background:white;border:2px solid #c0c0c0;border-radius:12px;display:flex;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.25)}
-.searchBox input{flex:1;border:none;padding:20px;font-size:17px;outline:none}
-.searchBox button{background:#071427;color:white;border:none;padding:0 28px;font-size:22px}
-.categories{background:white;color:#071427;padding:70px 40px;text-align:center}
-.catRow{display:flex;justify-content:center;gap:35px;flex-wrap:wrap}
-.cat img{width:115px;height:115px;border-radius:50%;object-fit:cover;border:2px solid #ddd}
-.cat p{font-size:17px;font-weight:bold}
-.intro{background:#f7f7f7;color:#071427;padding:55px 90px}
-.intro h5{color:#8b0000;letter-spacing:8px;font-size:15px}
-.intro h2{font-size:40px;margin:10px 0}
-.intro p{font-size:18px;line-height:1.7;max-width:900px}
-.float{position:fixed;right:22px;top:42%;background:#071427;border:1px solid #c0c0c0;border-radius:28px;overflow:hidden;z-index:99}
+.searchBox{width:58%;height:72px;background:white;border:3px solid #071427;border-radius:14px;display:flex;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.15)}
+.searchBox input{flex:1;border:0;padding:0 28px;font-size:19px;outline:none}
+.searchBox button{width:78px;border:0;background:#071427;color:white;font-size:30px}
+.categories{padding:55px 110px 40px}
+.categories h2{font-size:30px;margin-bottom:30px}
+.catRow{display:flex;gap:42px;flex-wrap:wrap}
+.cat{text-align:center;width:130px}
+.cat img{width:125px;height:125px;border-radius:50%;object-fit:cover;border:1px solid #eee}
+.cat p{font-size:17px;font-weight:bold;margin-top:12px}
+.float{position:fixed;right:22px;top:42%;background:#071427;border-radius:30px;overflow:hidden;z-index:99}
 .float a{display:block;color:white;text-decoration:none;padding:17px;font-size:22px;border-bottom:1px solid rgba(255,255,255,.2)}
-@media(max-width:800px){.navbar{padding:0 20px}.menu a{margin-left:12px;font-size:13px}.hero{padding:30px;height:480px}.hero h1{font-size:34px}.searchBox{width:85%}}
+@media(max-width:900px){.top{padding:0 25px}.menu{gap:14px;overflow:auto}.heroText{left:30px}.searchBox{width:86%}.categories{padding:45px 25px}.catRow{justify-content:center}}
 </style>
 </head>
-
 <body>
 
-<div class="navbar">
-  <div class="logoBox">
-    <img src="ChatGPT%20Image%2026%20Nis%202026%2019_28_15.png" alt="AYKA PROMO">
+<div class="top">
+  <div class="logo">
+    <img src="ChatGPT%20Image%2026%20Nis%202026%2019_28_15.png">
     <span>SUPPLY SOLUTION PARTNER</span>
   </div>
-
-  <div class="menu">
-    <a href="#">Ev</a>
-    <a href="#">Ürünler</a>
-    <a href="#">Hakkımızda</a>
-    <a href="#">Hizmet</a>
-    <a href="#">İletişim</a>
+  <div class="icons">
+    🇹🇷 📷 in 🔍 ♡ 👤
+    <div class="offer">📋 Teklif Listesi</div>
   </div>
 </div>
 
+<div class="menu">
+  <a href="#">Powerbank⌄</a>
+  <a href="#">Teknoloji⌄</a>
+  <a href="#">Ofis⌄</a>
+  <a href="#">Çanta⌄</a>
+  <a href="#">Kalem⌄</a>
+  <a href="#">Tekstil⌄</a>
+  <a href="#">Termos⌄</a>
+  <a href="#">VIP⌄</a>
+  <a href="#">Kurumsal Kutular⌄</a>
+</div>
+
 <section class="hero">
-  <div>
-    <h1>Kurumsal Promosyon ve Özel Baskı Çözümleri</h1>
-    <p>Markanızı taşıyan kaliteli hediyeler, özel kutular, promosyon ürünleri ve kurumsal setlerle firmanızı daha güçlü gösterin.</p>
-    <a class="btn btn1" href="#">Ürünleri İncele</a>
-    <a class="btn btn2" href="#">Teklif Al</a>
+  <div class="heroText">
+    <h1>Kurumsal Promosyon Ürünleri</h1>
+    <p>Markanızı taşıyan hediyeler, özel kutular, termoslar, defterler ve kurumsal setler.</p>
   </div>
+  <div class="sliderDots"><span></span><span></span><span></span><span></span><span></span></div>
 </section>
 
 <div class="searchWrap">
   <div class="searchBox">
-    <input type="text" placeholder="Ürün, kategori veya marka yazınız...">
-    <button>🔍</button>
+    <input placeholder="Ürün, Kategori veya Markayı yazınız...">
+    <button>⌕</button>
   </div>
 </div>
 
 <section class="categories">
   <h2>Kategoriler</h2>
   <div class="catRow">
-    <div class="cat"><img src="https://via.placeholder.com/120?text=Termos"><p>Termos</p></div>
-    <div class="cat"><img src="https://via.placeholder.com/120?text=Defter"><p>Defter</p></div>
-    <div class="cat"><img src="https://via.placeholder.com/120?text=Kutu"><p>Kutu Set</p></div>
-    <div class="cat"><img src="https://via.placeholder.com/120?text=Kalem"><p>Kalem</p></div>
-    <div class="cat"><img src="https://via.placeholder.com/120?text=Tekstil"><p>Tekstil</p></div>
+    <div class="cat"><img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=300&q=80"><p>Kurumsal Kutular</p></div>
+    <div class="cat"><img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=300&q=80"><p>Ofis</p></div>
+    <div class="cat"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=300&q=80"><p>Termoslar</p></div>
+    <div class="cat"><img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=300&q=80"><p>Teknoloji</p></div>
+    <div class="cat"><img src="https://images.unsplash.com/photo-1585336261022-680e295ce3fe?auto=format&fit=crop&w=300&q=80"><p>Kalem</p></div>
+    <div class="cat"><img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=300&q=80"><p>Tekstil</p></div>
+    <div class="cat"><img src="https://images.unsplash.com/photo-1506629905607-d3f297d18d64?auto=format&fit=crop&w=300&q=80"><p>VIP Ürünler</p></div>
   </div>
-</section>
-
-<section class="intro">
-  <h5>AYKA PROMO</h5>
-  <h2>Markanızı Taşıyan Hediyeler</h2>
-  <p>AYKA PROMO; kurumsal firmalara, ajanslara ve markalara özel promosyon, baskılı ürün, kutu, hediye seti ve tedarik çözümleri sunar.</p>
 </section>
 
 <div class="float">

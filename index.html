@@ -2,70 +2,266 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AYKA PROMO</title>
+
   <style>
     body {
       margin: 0;
+      font-family: Arial, sans-serif;
       background: #071427;
       color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
     }
 
-    header {
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #071427, #12345c);
-      border-bottom: 2px solid silver;
+    .navbar {
+      height: 95px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 70px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.12);
     }
 
-    img {
-      width: 180px;
+    .navbar img {
+      width: 82px;
+      height: 82px;
+      object-fit: contain;
       border-radius: 50%;
-      box-shadow: 0 0 30px silver;
     }
 
-    h1 {
+    .menu a {
+      color: #071427;
+      text-decoration: none;
+      margin-left: 35px;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .menu a:hover {
+      color: #9c9c9c;
+    }
+
+    .hero {
+      position: relative;
+      height: 560px;
+      overflow: hidden;
+      background: linear-gradient(120deg, rgba(7,20,39,0.92), rgba(18,52,92,0.78)),
+        url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding-left: 90px;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .hero-content h1 {
+      font-size: 56px;
+      margin: 0 0 20px;
+      letter-spacing: 2px;
+    }
+
+    .hero-content p {
+      font-size: 23px;
+      line-height: 1.6;
+      color: #e8e8e8;
+    }
+
+    .hero-buttons {
+      margin-top: 35px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 28px;
+      margin-right: 15px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .btn-main {
+      background: #c0c0c0;
+      color: #071427;
+    }
+
+    .btn-dark {
+      border: 1px solid #c0c0c0;
+      color: white;
+    }
+
+    .slider-dots {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .slider-dots span {
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      background: white;
+      opacity: 0.5;
+      border-radius: 50%;
+      margin: 0 6px;
+    }
+
+    .slider-dots span:first-child {
+      opacity: 1;
+      background: #c0c0c0;
+    }
+
+    .intro {
+      background: white;
+      color: #071427;
+      padding: 60px 90px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .intro h5 {
+      color: #8b0000;
+      letter-spacing: 8px;
+      margin: 0 0 15px;
+      font-size: 15px;
+    }
+
+    .intro h2 {
       font-size: 42px;
-      letter-spacing: 4px;
+      margin: 0 0 20px;
     }
 
-    p {
-      font-size: 20px;
-      color: #ddd;
+    .intro p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+      max-width: 850px;
+    }
+
+    .consult-btn {
+      background: #8b0000;
+      color: white;
+      padding: 20px 32px;
+      text-decoration: none;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .floating-contact {
+      position: fixed;
+      right: 22px;
+      top: 42%;
+      background: rgba(7,20,39,0.85);
+      border: 1px solid #c0c0c0;
+      border-radius: 25px;
+      overflow: hidden;
+      z-index: 999;
+    }
+
+    .floating-contact a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 16px;
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .floating-contact a:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 800px) {
+      .navbar {
+        padding: 0 20px;
+      }
+
+      .menu a {
+        margin-left: 12px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 40px 25px;
+        height: 520px;
+      }
+
+      .hero-content h1 {
+        font-size: 36px;
+      }
+
+      .intro {
+        flex-direction: column;
+        padding: 40px 25px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <img src="ChatGPT%20Image%2026%20Nis%202026%2019_28_15.png">
-    <h1>AYKA PROMO</h1>
-    <p>Markanızı Taşıyan Hediyeler</p>
-  </header>
-<section style="padding:50px; background:#0b1d36; display:flex; gap:25px; justify-content:center; flex-wrap:wrap;">
+  <div class="navbar">
+    <img src="ChatGPT%20Image%2026%20Nis%202026%2019_28_15.png" alt="AYKA PROMO Logo">
 
-  <div style="width:260px; background:white; border-radius:15px; overflow:hidden;">
-    <img src="https://via.placeholder.com/260x200?text=Termos" style="width:100%;">
-    <div style="padding:15px;">
-      <h3>Promosyon Termos</h3>
-      <p>Logo baskılı kurumsal termos</p>
-      <a href="https://wa.me/905000000000" style="display:block; text-align:center; background:#071427; color:white; padding:10px; border-radius:8px; text-decoration:none;">
-        Teklif Al
-      </a>
+    <div class="menu">
+      <a href="#">Ev</a>
+      <a href="#">Ürünler</a>
+      <a href="#">Hakkımızda</a>
+      <a href="#">Hizmet</a>
+      <a href="#">İletişim</a>
     </div>
   </div>
 
-  <div style="width:260px; background:white; border-radius:15px; overflow:hidden;">
-    <img src="https://via.placeholder.com/260x200?text=Defter" style="width:100%;">
-    <div style="padding:15px;">
-      <h3>Promosyon Defter</h3>
-      <p>Özel baskılı defterler</p>
-      <a href="https://wa.me/905455446669" style="display:block; text-align:center; background:#071427; color:white; padding:10px; border-radius:8px; text-decoration:none;">
-        Teklif Al
-      </a>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Kurumsal Promosyon ve Özel Baskı Çözümleri</h1>
+      <p>
+        Markanızı taşıyan kaliteli hediyeler, özel kutular, promosyon ürünleri
+        ve kurumsal setlerle firmanızı daha güçlü gösterin.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn btn-main" href="#">Ürünleri İncele</a>
+        <a class="btn btn-dark" href="#">Teklif Al</a>
+      </div>
     </div>
+
+    <div class="slider-dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div>
+      <h5>AYKA PROMO</h5>
+      <h2>Markanızı Taşıyan Hediyeler</h2>
+      <p>
+        AYKA PROMO; kurumsal firmalara, ajanslara ve markalara özel promosyon,
+        baskılı ürün, kutu, hediye seti ve tedarik çözümleri sunar.
+        Premium görünüm, hızlı teklif ve doğru ürün seçimiyle markanızı öne çıkarır.
+      </p>
+    </div>
+
+    <a class="consult-btn" href="#">Ücretsiz Danışmanlık Alın</a>
+  </section>
+
+  <div class="floating-contact">
+    <a href="#">✉</a>
+    <a href="#">☎</a>
+    <a href="#">☏</a>
   </div>
 
-</section>
 </body>
 </html>

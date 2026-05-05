@@ -4,33 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AYKA | Packaging & Promo Solutions</title>
+  <meta name="description" content="AYKA Packaging & Promo Solutions" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; font-family: Inter, Arial, sans-serif; background: #ff6b6b; color: #fff; }
     a { text-decoration: none; color: inherit; }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-    .nav { position: sticky; top: 0; background: rgba(255,107,107,.92); border-bottom: 1px solid rgba(255,255,255,.3); }
+    .nav { position: sticky; top: 0; background: rgba(255,107,107,.92); border-bottom: 1px solid rgba(255,255,255,.25); }
     .navin { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; gap: 16px; }
     .brand { display: flex; align-items: center; gap: 12px; }
-    .brand img { width: 56px; height: 56px; object-fit: cover; border-radius: 14px; background: #fff; }
-    .brand h1 { margin: 0; font-size: 24px; }
+    .brand img { width: 56px; height: 56px; object-fit: cover; border-radius: 14px; border: 1px solid rgba(255,255,255,.35); background: #fff; }
+    .brand h1 { margin: 0; font-size: 24px; letter-spacing: 1px; }
     .menu { display: flex; gap: 24px; font-weight: 600; }
-    .btn { padding: 12px 20px; border-radius: 999px; background: #fff; color: #c53030; font-weight: 700; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:12px 20px; border-radius:999px; background:#fff; color:#c53030; font-weight:700; }
     .hero { padding: 72px 0 40px; }
-    .hero h2 { margin: 0 0 10px; font-size: 54px; }
+    .hero h2 { margin: 0 0 10px; font-size: 54px; line-height: 1.1; }
     .hero p { margin: 0; max-width: 680px; line-height: 1.65; font-size: 20px; }
-    .grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; padding: 26px 0 50px; }
-    .card { border: 1px solid rgba(255,255,255,.3); background: rgba(255,255,255,.08); border-radius: 18px; padding: 20px; }
-    .card h3 { margin: 0 0 8px; font-size: 30px; }
-    .footer { border-top: 1px solid rgba(255,255,255,.28); padding: 20px 0 40px; }
-    @media (max-width:860px){ .menu{display:none} .hero h2{font-size:40px} .grid{grid-template-columns:1fr} }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; padding:26px 0 50px; }
+    .card { border: 1px solid rgba(255,255,255,.3); background: rgba(255,255,255,.08); border-radius:18px; padding:20px; }
+    .card h3 { margin:0 0 8px; font-size:30px; }
+    .card p { margin:0; color:#fff6f6; }
+    .footer { border-top:1px solid rgba(255,255,255,.28); padding:20px 0 40px; color:#fff3f3; }
+    @media (max-width: 860px) { .menu{display:none} .hero h2{font-size:40px} .grid{grid-template-columns:1fr} }
   </style>
 </head>
 <body>
   <header class="nav">
     <div class="container navin">
       <div class="brand">
-        <img src="logo.png" alt="AYKA Logo" />
+        <img src="logo.png" alt="AYKA Logo" onerror="this.style.display='none'" />
         <h1>AYKA</h1>
       </div>
       <nav class="menu">
@@ -59,16 +64,4 @@
 
   <footer class="footer">
     <div class="container">© 2026 AYKA. Packaging & Promo Solutions · Sürüm: 2026-05-05</div>
-</footer>
-
-<div style="position:fixed;bottom:10px;right:10px;background:#fff;color:#000;padding:6px 10px;border-radius:8px;font-weight:700;z-index:9999">TEST-RED-2026-05-04</div>
-</body>
-</html>
-</body>
-</html>
-Kaydet kapat.
-
-2) Zorla temiz push
-git add index.html
-git commit -m "Apply red theme + logo + menu update"
-git push origin main
+  </footer>

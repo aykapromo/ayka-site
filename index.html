@@ -4,74 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AYKA | Packaging & Promo Solutions</title>
-  <meta name="description" content="AYKA Packaging & Promo Solutions" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
   <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Inter, Arial, sans-serif; background: #facc15; color: #1f2937; }
-    a { text-decoration: none; color: inherit; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-
-    .nav { position: sticky; top: 0; background: rgba(250, 204, 21, 0.95); border-bottom: 1px solid #e5e7eb; }
-    .navin { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; gap: 16px; }
-    .brand { display: flex; align-items: center; gap: 12px; }
-    .brand h1 { margin: 0; font-size: 24px; letter-spacing: 1px; color: #111827; }
-    .menu { display: flex; gap: 24px; font-weight: 600; color: #111827; }
-
-    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 20px; border-radius: 999px; background: #ef4444; color: #fff; font-weight: 700; }
-
-    .hero { padding: 72px 0 40px; }
-    .hero h2 { margin: 0 0 10px; font-size: 54px; line-height: 1.1; color: #111827; }
-    .hero p { margin: 0; max-width: 680px; line-height: 1.65; font-size: 20px; color: #374151; }
-
-    .grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; padding: 26px 0 50px; }
-    .card { border: 2px solid #111827; background: #fff; border-radius: 18px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,.08); }
-    .card h3 { margin: 0 0 8px; font-size: 30px; color: #111827; font-weight: 800; }
-    .card p { margin: 0; color: #4b5563; }
-
-    .footer { border-top: 1px solid #e5e7eb; padding: 20px 0 40px; color: #4b5563; }
-
-    @media (max-width: 860px) {
-      .menu { display: none; }
-      .hero h2 { font-size: 40px; }
-      .grid { grid-template-columns: 1fr; }
-    }
+    * { box-sizing:border-box }
+    body { margin:0; font-family:Arial,sans-serif; background:#facc15; color:#111827 }
+    .container { max-width:1100px; margin:0 auto; padding:0 24px }
+    .nav { position:sticky; top:0; background:rgba(250,204,21,.95); border-bottom:1px solid #e5e7eb }
+    .navin { display:flex; justify-content:space-between; align-items:center; padding:16px 0 }
+    .menu { display:flex; gap:24px; font-weight:700 }
+    .btn { padding:12px 20px; border-radius:999px; background:#ef4444; color:#fff; text-decoration:none; font-weight:700 }
+    .hero { padding:72px 0 40px }
+    .hero h2 { margin:0 0 10px; font-size:54px; line-height:1.1 }
+    .hero p { margin:0; max-width:680px; line-height:1.6; font-size:20px }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; padding:26px 0 50px }
+    .card { border:2px solid #111827; background:#fff; border-radius:18px; padding:20px }
+    .card h3 { margin:0 0 8px; font-size:30px }
+    .card p { margin:0; color:#374151 }
+    .footer { border-top:1px solid #e5e7eb; padding:20px 0 40px; color:#374151 }
+    @media (max-width:860px){ .menu{display:none} .hero h2{font-size:40px} .grid{grid-template-columns:1fr} }
   </style>
 </head>
 <body>
   <header class="nav">
     <div class="container navin">
-      <div class="brand">
-        <h1>AYKA</h1>
-      </div>
+      <h1>AYKA</h1>
       <nav class="menu">
         <a href="#urunler">Sistem Proje</a>
         <a href="#premium">Premium</a>
-        <a href="#iletisim">İletişim</a>
+        <a href="#iletisim">Iletisim</a>
       </nav>
       <a class="btn" href="https://wa.me/905455446669" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </div>
   </header>
-
   <main>
     <section class="hero">
       <div class="container">
         <h2>Packaging & Promo Solutions</h2>
-        <p>Kurumsal promosyon, baskı ve ambalaj ihtiyaçlarınız için hızlı ve güvenilir çözümler.</p>
+        <p>Kurumsal promosyon, baski ve ambalaj ihtiyaclariniz icin hizli ve guvenilir cozumler.</p>
       </div>
     </section>
-
     <section class="container grid" id="urunler">
-      <article class="card"><h3>Sistem Proje</h3><p>Sistem ve proje bazlı çözüm grupları.</p></article>
-      <article class="card" id="premium"><h3>Premium</h3><p>Markanıza özel premium çözüm setleri.</p></article>
-      <article class="card" id="iletisim"><h3>İletişim</h3><p>E-posta: aykamat@gmail.com</p></article>
+      <article class="card"><h3>Sistem Proje</h3><p>Sistem ve proje bazli cozum gruplari.</p></article>
+      <article class="card" id="premium"><h3>Premium</h3><p>Markaniza ozel premium cozum setleri.</p></article>
+      <article class="card" id="iletisim"><h3>Iletisim</h3><p>E-posta: aykamat@gmail.com</p></article>
     </section>
   </main>
-
   <footer class="footer">
-    <div class="container">© 2026 AYKA. Packaging & Promo Solutions · Sürüm: 2026-05-10</div>
+    <div class="container">© 2026 AYKA. Packaging & Promo Solutions - Surum: 2026-05-10</div>
   </footer>
 </body>
 </html>

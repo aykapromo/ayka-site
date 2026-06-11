@@ -1,1 +1,1 @@
-{"scripts":{"build":"echo 'Static site ready'"},"dependencies":{},"devDependencies":{}}
+{"scripts":{"build":"echo 'Static site ready'","deploy:check":"git branch --show-current && git log --oneline -n 3 && git remote -v && npm run build"},"dependencies":{},"devDependencies":{}}

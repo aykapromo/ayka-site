@@ -1,1 +1,1 @@
-{"outputDirectory":"."}
+{"outputDirectory":".","cleanUrls":true,"trailingSlash":false,"headers":[{"source":"/(.*)","headers":[{"key":"Cache-Control","value":"no-store, max-age=0"}]}]}
